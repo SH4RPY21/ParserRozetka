@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ParsingRozetka</title>
+  <style>
+    body{
+      background-image: url('https://cdn.discordapp.com/attachments/893780571879272449/1094283210961207447/wallpaperflare.com_wallpaper_3.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      display:flex;
+      justify-content: center;
+
+    }
+    div{
+      color:white;
+    }
+    a {
+      color: white ;
+      text-decoration:none;
+    }
+
+    a:visited {
+      color: white;
+      text-decoration:none;
+    }
+    a:active {
+      color: white;
+      text-decoration:none;
+
+    }
+  </style>
+</head>
+<body>
+<div>
+  <h2 th:text="${descName}"></h2>
+  <h2 th:text="${descText}" style="font-size: 16px"></h2>
+  <a href="main" style="text-decoration: none; font-size: 16px">Повернення до головної сторінки</a>
+</div>
+</body>
+</html>

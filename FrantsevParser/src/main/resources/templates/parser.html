@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ParsingRozetka</title>
+  <style>
+    body{
+      background-image: url('https://cdn.discordapp.com/attachments/893780571879272449/1094283210961207447/wallpaperflare.com_wallpaper_3.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      display:flex;
+      justify-content: center;
+
+    }
+    div{
+      color:white;
+    }
+
+    a {
+      color: white ;
+      text-decoration:none;
+    }
+
+    a:visited {
+      color: white;
+      text-decoration:none;
+    }
+    a:active {
+      color: white;
+      text-decoration:none;
+
+    }
+  </style>
+</head>
+<body>
+<div>
+<h2 th:text="${parserDesc}"></h2>
+<h2 th:text="${parserNotification}" style="font-size: 24px; color:white; text-decoration: underline"></h2>
+<form action="/injection" method="POST">
+  <label for="name" style="font-size: 20px">Який товар шукаємо?</label>
+  <br>
+  <br>
+  <input type="text" id="name" name="name" style="padding: 8px; border: 1px solid black; background: rgba(255,255,255,0.8);">
+  <br>
+  <br>
+  <input  type="submit" id="button" value="Пошук товару" style="border: 1px solid black; padding: 8px;  background-color: rgba(255,255,255,0.8); margin-bottom: 10px; cursor: pointer">
+</form>
+<a href="main" style="text-decoration: none; font-size: 21px">Повернутися на головну сторінку</a>
+</div>
+</body>
+</html>
